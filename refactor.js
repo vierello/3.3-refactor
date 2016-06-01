@@ -85,6 +85,9 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+// [c]: z then y - this happens because there is a
+//      timeout set on the function that returns y
+//      causing it to log after the other value.
 
 // -----------------------------------------------
 
