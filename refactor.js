@@ -278,9 +278,29 @@ var speed = 0;
 
 var accelerate = function(amount) {
   speed += amount;
+
 };
 
 // Put your answer below -------------------------
+
+//The function is returning NaN because if there is
+//no argument provided, the function is trying to add
+//0 with an undefined parameter, which is not a number,
+//therefore returning NaN.
+
+var speed = 0;
+
+var accelerate = function(amount) {
+  if(amount > 0){
+    speed += amount;
+  } else{
+    speed = 1;
+  }
+};
+
+accelerate(50);
+
+console.log(speed);
 
 
 // -----------------------------------------------
