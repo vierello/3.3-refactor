@@ -146,8 +146,20 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+var spanishColor = function(colorName) {
+  var colors = {
+    rojo: '#ff0000',
+    blanco: '#ffffff',
+    azul: '#0000ff',
+    verde: '#00ff00',
+    negro: '#000000'
+  };
+
+  return colors[colorName];
+}
 
 
+console.log(spanishColor('rojo'));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -189,6 +201,13 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
+var callTenTimes = function(callback) {
+  for(var i=1; i<=10; i++){
+    callback();
+  }
+};
+
+console.log(callTenTimes(8));
 
 // -----------------------------------------------
 
@@ -300,7 +319,7 @@ var accelerate = function(amount) {
 
 accelerate(50);
 
-console.log(speed);
+//console.log(speed);
 
 
 // -----------------------------------------------
