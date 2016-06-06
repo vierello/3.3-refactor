@@ -195,19 +195,19 @@ foo = "bar";
 // function.
 
 var callTenTimes = function(callback) {
-  var range = _.range(10);
-  _.each(range, callback);
-};
-
-// Put your answer below -------------------------
-
-var callTenTimes = function(callback) {
   for(var i=1; i<=10; i++){
     callback();
   }
 };
 
-console.log(callTenTimes(8));
+// Put your answer below -------------------------
+
+var callNTimes = function(callback, number) {
+  for(var i=1; i<=number; i++){
+    callback('hello', 8);
+  }
+};
+
 
 // -----------------------------------------------
 
